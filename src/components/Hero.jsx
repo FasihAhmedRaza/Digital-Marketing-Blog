@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 // Import videos
 import backgroundVideo from "../img/video/hero.mp4"; // High-quality background video
 
+
 const Hero = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -36,15 +37,11 @@ const Hero = () => {
 
     const handleScroll = () => {
       if (formElement && heroSection) {
-        // Check if the screen width is greater than 1024px (desktop)
         if (window.innerWidth > 1024) {
           const scrollY = window.scrollY; // Current scroll position
           const maxOffset = 200; // Maximum offset for the form (adjust as needed)
 
-          // Calculate the form's offset based on scroll position
           const newOffset = Math.min(scrollY, maxOffset);
-
-          // Update the form's position
           setFormOffset(newOffset);
           formElement.style.transform = `translateY(${newOffset}px)`;
         }
@@ -87,23 +84,21 @@ const Hero = () => {
             strategies and the latest technologies.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
-
             {/* Show this button only on mobile screens */}
             <button
               onClick={toggleFormVisibility}
               className="lg:hidden bg-[#2A9D8F] text-white py-3 px-6 rounded-lg hover:bg-[#264653] transition-all duration-300"
             >
-              {showForm ? "Hide Form" : "Book Your free Consultation!"}
+              {showForm ? "Hide Form" : "Book Your Free Consultation!"}
             </button>
           </div>
         </div>
 
         {/* Right Side - Contact Form */}
-        {/* Hide form on mobile by default, show only when button is clicked */}
         <div
           className={`scrollable-form bg-white p-6 sm:p-8 rounded-lg shadow-2xl w-full lg:w-1/3 ${
             showForm ? "block" : "hidden lg:block"
-          } ${window.innerWidth <= 1024 ? "mt-0" : "lg:mt-0"}`} // No margin on mobile
+          }`}
           style={{ transform: `translateY(${formOffset}px)` }}
         >
           <h2 className="text-2xl font-bold text-[#264653] mb-6">

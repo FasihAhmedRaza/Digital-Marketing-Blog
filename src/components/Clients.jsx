@@ -31,17 +31,31 @@ const Clients = () => {
         Our Learners Work at Global Companies & Startups
       </p>
 
-      {/* Logo slider */}
-      <Marquee pauseOnHover="true" className="flex items-center">
-        <img className="w-28 mr-20" src={client1} alt="img1" />
-        <img className="w-28 mr-20" src={client2} alt="img2" />
-        <img className="w-28 mr-20" src={client3} alt="img3" />
-        <img className="w-28 mr-20" src={client4} alt="img4" />
-        <img className="w-28 mr-20" src={client5} alt="img5" />
-        <img className="w-28 mr-20" src={client6} alt="img6" />
-        <img className="w-28 mr-20" src={client7} alt="img7" />
-        <img className="w-28 mr-20" src={client8} alt="img8" />
-      </Marquee>
+      {/* Static Logos for Large Screens */}
+      <div className="hidden md:flex flex-wrap justify-center items-center gap-10">
+        <img className="w-28" src={client1} alt="img1" />
+        <img className="w-28" src={client2} alt="img2" />
+        <img className="w-28" src={client3} alt="img3" />
+        <img className="w-28" src={client4} alt="img4" />
+        <img className="w-28" src={client5} alt="img5" />
+        <img className="w-28" src={client6} alt="img6" />
+        <img className="w-28" src={client7} alt="img7" />
+        <img className="w-28" src={client8} alt="img8" />
+      </div>
+
+      {/* Animated Marquee for Mobile Screens */}
+      <div className="md:hidden">
+        <Marquee pauseOnHover="true" className="flex items-center">
+          <img className="w-28 mr-10" src={client1} alt="img1" />
+          <img className="w-28 mr-10" src={client2} alt="img2" />
+          <img className="w-28 mr-10" src={client3} alt="img3" />
+          <img className="w-28 mr-10" src={client4} alt="img4" />
+          <img className="w-28 mr-10" src={client5} alt="img5" />
+          <img className="w-28 mr-10" src={client6} alt="img6" />
+          <img className="w-28 mr-10" src={client7} alt="img7" />
+          <img className="w-28 mr-10" src={client8} alt="img8" />
+        </Marquee>
+      </div>
     </div>
   );
 };
