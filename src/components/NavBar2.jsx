@@ -4,7 +4,7 @@ import { FaPhone } from "react-icons/fa"; // Import the phone icon
 import logoDesktop from "../img/SMMA.png"; // Replace with the actual path to your desktop logo image
 import logoMobile from "../img/SocialMediaLogo.png"; // Replace with the actual path to your mobile logo image
 
-const NavBar = () => {
+const NavBar2 = () => {
   const [show, setShow] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024); // Adjust the breakpoint as needed
 
@@ -42,24 +42,6 @@ const NavBar = () => {
             Home
           </a>
           <a
-            href="/#about"
-            className="text-gray-800 hover:text-[#EE7540] text-md tracking-wide font-light"
-          >
-            About
-          </a>
-          <a
-            href="/#team"
-            className="text-gray-800 hover:text-[#EE7540] text-md tracking-wide font-light"
-          >
-            Team
-          </a>
-          <a
-            href="/#services"
-            className="text-gray-800 hover:text-[#EE7540] text-md tracking-wide font-light"
-          >
-            Services
-          </a>
-          <a
             href="tel:502-888-5992" // Updated phone number
             className="flex items-center gap-2 text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
           >
@@ -90,24 +72,7 @@ const NavBar = () => {
           >
             Home
           </a>
-          <a
-            href="/#team"
-            className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
-          >
-            Team
-          </a>
-          <a
-            href="/Marketing-Website/#about"
-            className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
-          >
-            About
-          </a>
-          <a
-            href="/#services"
-            className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
-          >
-            Services
-          </a>
+
 
 
         </div>
@@ -116,4 +81,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default NavBar2;
