@@ -3,7 +3,7 @@ import NavBar from './NavBar'
 import Hero from './Hero'
 import About from './About'
 import Services from './Services'
-
+import Blog from './BlogSection'
 import Team from './Team'
 import Clients from './Clients'
 
