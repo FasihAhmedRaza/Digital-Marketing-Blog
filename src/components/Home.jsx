@@ -28,9 +28,7 @@ const Home = () => {
       {/* <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#FEFAF8] border-b border-orange-100">
         <FreqAskedQues />
       </section> */}
-      <section>
-        <Blog/>
-      </section>
+     
       <section >
         <Team />
       </section>
@@ -43,6 +41,9 @@ const Home = () => {
       {/* <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#FEFAF8] border-b border-orange-100">
         <Newsletter />
       </section> */}
+       <section>
+        <Blog/>
+      </section>
       <section className="w-full max-h-fit   overflow-hidden ">
         <Footer />
       </section>
